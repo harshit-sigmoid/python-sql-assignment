@@ -4,7 +4,7 @@ from datetime import date
 import logging
 log = logging.getLogger(__name__)
 
-
+# class name can be more relatable
 class ProblemB(Problem):
     def __init__(self,cur):
         super(ProblemB, self).__init__(cur)
@@ -19,7 +19,7 @@ class ProblemB(Problem):
     def get_total_compensation(self,months_spent,  monthly_sal, commission):
         return months_spent * monthly_sal + commission
 
-
+#      flow of this class explanation like what its suuposed to do
     def solve(self):
         column_names = ["Employee_Name", "Dept_Name", "Total_Compensation", "Months_spent"]
         log.info("fetching records")
